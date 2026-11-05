@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: retail360
+Version: 1.0.0
+Summary: Retail360 - Enterprise Retail Data Intelligence Platform (fictional portfolio project)
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml>=6.0
+Provides-Extra: spark
+Requires-Dist: pyspark==3.5.3; extra == "spark"
+Requires-Dist: delta-spark==3.2.1; extra == "spark"
+Provides-Extra: generator
+Requires-Dist: faker>=24.0; extra == "generator"
+Requires-Dist: numpy>=1.26; extra == "generator"
+Requires-Dist: pandas>=2.0; extra == "generator"
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+Requires-Dist: pytest-cov>=5.0; extra == "dev"
+Requires-Dist: chispa>=0.10; extra == "dev"
+Requires-Dist: ruff>=0.5; extra == "dev"
+Requires-Dist: sqlfluff>=3.0; extra == "dev"
+Requires-Dist: yamllint>=1.35; extra == "dev"

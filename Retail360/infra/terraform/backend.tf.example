@@ -1,0 +1,12 @@
+# EXAMPLE ONLY - copy to backend.tf and fill in placeholders. Nothing here is real.
+# Create the state storage account out-of-band (separate subscription/RG recommended).
+#
+# terraform {
+#   backend "azurerm" {
+#     resource_group_name  = "<your-tfstate-resource-group>"
+#     storage_account_name = "<your-tfstate-storage-account>"
+#     container_name       = "tfstate"
+#     key                  = "retail360/<env>.tfstate"
+#     use_azuread_auth     = true
+#   }
+# }
